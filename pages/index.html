@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calc-with-history">
+        <div class="calculater">
+            <div class="result">
+                <label class="result-label" for="result"></label>
+            </div>
+            <div class="all-buttons">
+                <div class="operations">
+                    <button class="delete-operation">D</button>
+                    <button class="power">^</button>
+                    <button class="double">x<sup>2</sup></button>
+                    <button class="reminder">%</button>
+                </div>
+                <div class="numbers-operations2">
+                    <div class="numbers">
+                        <button class="number">9</button>
+                        <button class="number">8</button>
+                        <button class="number">7</button>
+                        <button class="number">6</button>
+                        <button class="number">5</button>
+                        <button class="number">4</button>
+                        <button class="number">3</button>
+                        <button class="number">2</button>
+                        <button class="number">1</button>
+                        <button class="number">.</button>
+                        <button class="number" id="zero">0</button>
+                    </div>
+                    <div class="operations2">
+                        <button class="add-operation">+</button>
+                        <button class="minus-operation">-</button>
+                        <button class="multiply-operation">*</button>
+                        <button class="division-operation">/</button>
+                    </div>
+                </div>
+                <div class="equal-and-AC">
+                    <button class="equal-operation">=</button>
+                    <button class="clear-operation">AC</button>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <button class="last-operations"><i class="fa-solid fa-clock-rotate-left"></i></button>
+            <ul class="operations-list"></ul>
+            <p class="empty-history">Empty History</p>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>

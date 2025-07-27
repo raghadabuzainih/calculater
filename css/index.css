@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculater{
+    width: 15rem;
+    display: grid;
+}
+
+.result{
+    padding: 2rem 0;
+    width: 19rem;
+    margin-bottom: 1rem;
+    color: white;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: end;
+}
+
+.all-buttons{
+    margin-top: -2rem;
+    display: grid;
+}
+
+button{
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    height: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.operations{
+    display: flex;
+    width: 100%;
+}
+
+.reminder{
+    margin-left: 1rem;
+}
+
+.numbers-operations2{
+    display: flex;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+#zero{
+    width: 57%;
+}
+
+.operations2{
+    display: grid;
+}
+
+.operations, .number, .operations{
+    justify-content: center;
+}
+
+.operations2 button, .reminder, .power, .double{
+    background-color: orange;
+}
+
+.clear-operation, .delete-operation{
+    background-color: rgb(255, 102, 102);
+}
+
+.equal-and-AC{
+    display: flex;
+    gap: 1rem;
+}
+
+.equal-operation{
+    width: 100%;
+}
+
+ul, .empty-history{
+    display: none;
+    color: white;
+}
