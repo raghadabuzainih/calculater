@@ -47,17 +47,13 @@ function equal(){
     li.style.whiteSpace = 'pre-line'
     list.appendChild(li)
     result.textContent = eval(result.textContent)
+    message.style.display = 'none'
 }
 
 lastOperations.addEventListener('click', (e)=>{
     e.preventDefault()
     list.style.display = list.style.display == "block" ? "none" : "block"
     message.style.display = message.style.display == "block" ? "none" : "block"
-    if(Object.keys(map).length == 0){
-        message.style.display = 'block'
-    }else{
-        message.style.display = 'none'
-    }
 })
 
 document.addEventListener('keydown', (e)=>{
