@@ -15,13 +15,13 @@
             </div>
             <div class="all-buttons">
                 <div class="operations">
-                    <button class="delete-operation">D</button>
-                    <button class="power">^</button>
-                    <button class="double">x<sup>2</sup></button>
-                    <button class="reminder">%</button>
+                    <button class="delete-operation" data-action="delete">D</button>
+                    <button class="power" data-action="power">^</button>
+                    <button class="double" data-action="double">x<sup>2</sup></button>
+                    <button class="reminder" data-action="reminder">%</button>
                 </div>
                 <div class="numbers-operations2">
-                    <div class="numbers">
+                    <div class="numbers-brackets">
                         <button class="number">9</button>
                         <button class="number">8</button>
                         <button class="number">7</button>
@@ -31,19 +31,21 @@
                         <button class="number">3</button>
                         <button class="number">2</button>
                         <button class="number">1</button>
-                        <button class="number">.</button>
+                        <button class="bracket">(</button>
+                        <button class="bracket">)</button>
                         <button class="number" id="zero">0</button>
                     </div>
                     <div class="operations2">
-                        <button class="add-operation">+</button>
-                        <button class="minus-operation">-</button>
-                        <button class="multiply-operation">*</button>
-                        <button class="division-operation">/</button>
+                        <button class="add-operation" data-action="plus">+</button>
+                        <button class="minus-operation" data-action="minus">-</button>
+                        <button class="multiply-operation" data-action="multiply">*</button>
+                        <button class="division-operation" data-action="division">/</button>
                     </div>
                 </div>
                 <div class="equal-and-AC">
-                    <button class="equal-operation">=</button>
-                    <button class="clear-operation">AC</button>
+                    <button class="equal-operation" data-action="equal">=</button>
+                    <button>.</button>
+                    <button class="clear-operation" data-action="clear">AC</button>
                 </div>
             </div>
         </div>
@@ -53,6 +55,14 @@
             <p class="empty-history">Empty History</p>
         </div>
     </div>
+    <div class="blur"></div>
+    <div class="invalid-key">
+        <h2>Invalid key</h2>
+        <h3>Make sure that the key is allowed in the calculator</h3>
+        <button class="cancel-button" type="submit">cancel</button>
+    </div>
+    <!-- import math library to use evaluate function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
 </html>

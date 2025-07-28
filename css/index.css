@@ -56,15 +56,11 @@ button{
     display: flex;
 }
 
-.numbers{
+.numbers-brackets{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: start;
-}
-
-#zero{
-    width: 57%;
 }
 
 .operations2{
@@ -83,16 +79,61 @@ button{
     background-color: rgb(255, 102, 102);
 }
 
+.clear-operation{
+    margin-left: 1rem;
+}
+
 .equal-and-AC{
     display: flex;
-    gap: 1rem;
 }
 
 .equal-operation{
-    width: 100%;
+    width: 43%;
+}
+
+.bracket{
+    background-color: rgb(32, 129, 32);
 }
 
 ul, .empty-history{
     display: none;
     color: white;
+}
+
+.last-operations{
+    background-color: gray;
+}
+
+.blur{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.invalid-key{
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 30rem;
+    height: 10rem;
+    z-index: 1;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(236, 87, 87);
+}
+
+.invalid-key button{
+    width: 5rem;
+    font-size: 1rem;
+    height: 2rem;
+    padding: 0;
+    display: block;
+    justify-self: end;
 }
