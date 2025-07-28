@@ -16,9 +16,13 @@ body{
     width: 19rem;
     margin-bottom: 1rem;
     color: white;
-    height: 4rem;
+    height: 2rem;
     font-size: 2rem;
     text-align: end;
+    overflow: auto;
+    overflow-x:visible;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
 }
 
 .all-buttons{
