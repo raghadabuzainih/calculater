@@ -53,7 +53,7 @@ function equal(){
 lastOperations.addEventListener('click', (e)=>{
     e.preventDefault()
     list.style.display = list.style.display == "block" ? "none" : "block"
-    message.style.display = message.style.display == "block" ? "none" : "block"
+    if(Object.keys(map).length == 0) message.style.display = message.style.display == "block" ? "none" : "block"
 })
 
 document.addEventListener('keydown', (e)=>{
