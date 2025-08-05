@@ -11,6 +11,6 @@
   - **AC**
   - **D**: Clears only the last entry.
 - **Supports parentheses**: Use `(` and `)` to control operation order.
-- **Live input validation**: Alerts if a non-numeric or invalid character is entered.
 - **Keyboard support**: Enter numbers and operations using your keyboard.
+- **Live input validation**: Alerts if a non-numeric or invalid character is entered.
 - **Calculation history**: Displays all previously performed calculations.
