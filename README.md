@@ -13,4 +13,4 @@
 - **Supports parentheses**: Use `(` and `)` to control operation order.
 - **Keyboard support**: Enter numbers and operations using your keyboard.
 - **Live input validation**: Alerts if a non-numeric or invalid character is entered.
-- **Calculation history**: Displays all previously performed calculations.
+- **Calculation history**: Displays all previously performed calculations(stored in local-storage).
